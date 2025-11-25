@@ -81,12 +81,14 @@
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react-swc": "^3.3.2",
+    "@vitest/coverage-v8": "^4.0.13",
     "chromatic": "^7.6.0",
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "eslint-plugin-storybook": "^0.6.15",
     "husky": "^8.0.3",
+    "jsdom": "^27.2.0",
     "lint-staged": "^15.2.0",
     "prettier": "3.1.1",
     "sass": "^1.66.1",
@@ -94,7 +96,8 @@
     "storybook-addon-react-router-v6": "^2.0.8",
     "storybook-react-context": "^0.6.0",
     "typescript": "^5.0.2",
-    "vite": "^4.5.3"
+    "vite": "^4.5.3",
+    "vitest": "^4.0.13"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
