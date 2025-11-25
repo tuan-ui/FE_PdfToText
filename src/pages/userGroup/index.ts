@@ -1,0 +1,1 @@
+export { DefaultUserGroupPage } from './DefaultPage';

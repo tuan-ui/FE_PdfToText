@@ -1,0 +1,28 @@
+import React from 'react';
+import { Breadcrumb, BreadcrumbProps, Space, Typography } from 'antd';
+
+import './styles.css';
+
+type Props = {
+  title: string;
+  breadcrumbs: BreadcrumbProps['items'];
+} & React.HTMLAttributes<HTMLDivElement>;
+
+export const PageHeader = ({ breadcrumbs, title, ...others }: Props) => {
+  const incomingStyle = (others as any).style || {};
+  const overrideStyle = { paddingTop: 8 };
+  const mergedStyle = { ...incomingStyle, ...overrideStyle };
+  return (
+    <div {...others} style={mergedStyle}>
+      <Space direction="vertical" size="small" >
+        <Typography.Title
+          level={4}
+          style={{ padding: 0, margin: 0, textTransform: 'capitalize' }}
+        >
+          {title}
+        </Typography.Title>
+        <Breadcrumb items={breadcrumbs} className="page-header-breadcrumbs" />
+      </Space>
+    </div>
+  );
+};

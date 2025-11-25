@@ -1,0 +1,1 @@
+export { DefaultRolePage } from './DefaultPage';

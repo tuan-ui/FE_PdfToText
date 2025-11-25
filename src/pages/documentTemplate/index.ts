@@ -1,0 +1,1 @@
+export { DefaultDocumentTemplatePage } from './DefaultPage';

@@ -1,0 +1,1 @@
+export { DefaultProcessDocsPage } from './DefaultPage';

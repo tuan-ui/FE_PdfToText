@@ -1,0 +1,1 @@
+export { DefaultUserPage } from './DefaultPage';

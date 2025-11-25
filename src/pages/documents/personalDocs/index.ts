@@ -1,0 +1,1 @@
+export { DefaultDocPage } from './DefaultDocPage';
