@@ -35,7 +35,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
-          sonar.projectKey: tuan-ui_nsoftfe2
-          sonar.organization: tuan-ui
-          args: >
-            -Dsonar.qualitygate.wait=true
+          projectKey: tuan-ui_nsoftfe2
+          organization: tuan-ui
+          args: -Dsonar.qualitygate.wait=true
