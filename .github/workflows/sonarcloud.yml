@@ -28,14 +28,15 @@ jobs:
       - name: Build project
         run: npm run build --if-present
 
-      # SonarCloud scan
       - name: SonarCloud Scan
         uses: SonarSource/sonarqube-scan-action@v4
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          project: tuan-ui_nsoftfe2
-          organization: tuan-ui
           args: >-
+            -Dsonar.projectKey=tuan-ui_nsoftfe2
+            -Dsonar.organization=tuan-ui
             -Dsonar.qualitygate.wait=true
+
+
